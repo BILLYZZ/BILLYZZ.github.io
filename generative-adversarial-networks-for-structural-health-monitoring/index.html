@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<title>Generative Adversarial Networks for SHM</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="http://billyzz.github.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="http://billyzz.github.io/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/billyzz.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://billyzz.github.io/wp-includes/css/dist/block-library/style.min.css?ver=5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://billyzz.github.io/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cvee-style-css'  href='http://billyzz.github.io/wp-content/themes/cvee/style.css?ver=5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='FontAwesome-css'  href='http://billyzz.github.io/wp-content/themes/cvee/assets/fonts/fontawesome-all.css?ver=5.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='cvee_google_fonts-css'  href='//fonts.googleapis.com/css?family=Lato:100,300|Source+Sans:100,500,300,600,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='http://billyzz.github.io/wp-content/themes/cvee/style.css?ver=5.2.7' type='text/css' media='all' />
+<style id='custom-style-inline-css' type='text/css'>
+
+                #masthead{
+                        background-image: url();
+                        background-size:cover;
+                        background-repeat:no-repeat;
+                }
+</style>
+<script type='text/javascript' src='http://billyzz.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://billyzz.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://billyzz.github.io/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://billyzz.github.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://billyzz.github.io/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.7" />
+<link rel="canonical" href="http://billyzz.github.io/generative-adversarial-networks-for-structural-health-monitoring/" />
+<link rel='shortlink' href='http://billyzz.github.io/?p=77' />
+<link rel="alternate" type="application/json+oembed" href="http://billyzz.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbillyzz.github.io%2Fgenerative-adversarial-networks-for-structural-health-monitoring%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://billyzz.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbillyzz.github.io%2Fgenerative-adversarial-networks-for-structural-health-monitoring%2F&#038;format=xml" />
+    <style type="text/css">
+
+      #masthead {background-color: #f1f5f8;}
+      .menu-toggle {color: #111111;}
+      .site-title a {color: #fff;}
+      body {font-family: Times New Roman, Times, serif;}
+
+      .footer-widget h2, .rssSummary ,  .footer-widget h3, .footer-widget p, .footer-widget a, .footer-widget .wp-calendar, .footer-widget ul {color: #333;}
+      .footer-widget {background-color: #fff;}
+      body {line-height: 25px;}
+     
+
+
+      
+    </style>
+    </head>
+
+<body class="page-template-default page page-id-77 wp-embed-responsive cooltimeline-body no-sidebar">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+							<p class="site-title"><a href="http://billyzz.github.io/" rel="home"></a></p>
+						</div><!-- .site-branding -->
+
+		
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button href="#sidr" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
+				<div id="menu" class="menu"><ul>
+<li class="page_item page-item-77 current_page_item"><a href="http://billyzz.github.io/generative-adversarial-networks-for-structural-health-monitoring/" aria-current="page">Generative Adversarial Networks for SHM</a></li>
+<li class="page_item page-item-13"><a href="http://billyzz.github.io/">Pengyuan Zhai</a></li>
+<li class="page_item page-item-167"><a href="http://billyzz.github.io/text-analytics-for-reconnaissance-tar/">Text Analytics for Reconnaissance (TAR)</a></li>
+</ul></div>
+			</nav>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main default_page">
+
+		
+<article id="post-77" class="post-77 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Generative Adversarial Networks for SHM</h1>	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://billyzz.github.io/wp-content/uploads/2020/08/Screen-Shot-2020-08-28-at-1.32.05-PM.png" alt="" class="wp-image-73" srcset="http://billyzz.github.io/wp-content/uploads/2020/08/Screen-Shot-2020-08-28-at-1.32.05-PM.png 620w, http://billyzz.github.io/wp-content/uploads/2020/08/Screen-Shot-2020-08-28-at-1.32.05-PM-300x122.png 300w" sizes="(max-width: 620px) 100vw, 620px" /></figure></div>
+
+
+
+<p>This project is led by Prof. Mosalam (UC Berkeley CEE Department and head of Pacific Earthquake Engineering Research Center). Co-authors are  Yuqing Gao, Ph.D. and Pengyuan (Bill) Zhai. This is my first GAN research with PEER. In this study, we aim to address the <strong>low-data</strong> and <strong>imbalanced-class</strong> <strong>issues</strong> faced by many vision-based Structural Health Monitoring (SHM) applications. We introduced a variant of semi-supervised Generative Adversarial Network (GAN), named the <strong>BSSGAN</strong> (Balanced-batch Semi-supervised GAN), which outperformed traditional CNN baselines, traditional CNN with GAN-based data augmentation methods, etc.</p>
+
+
+
+<p>Our paper is titled <em>&#8220;Balanced Semi-supervised Generative Adversarial Network in Vision-based Structural Damage Assessment under the Low-data and Imbalanced-class Regime.&#8221;</em> </p>
+
+
+
+<p style="color:#668fe2" class="has-text-color">Google Drive Link to this paper: <a href="https://drive.google.com/file/d/11Q1FdkmxqRwfYitctHshu0TeY-GtNIEb/view?usp=sharing" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://drive.google.com/file/d/11Q1FdkmxqRwfYitctHshu0TeY-GtNIEb/view?usp=sharing</a></p>
+
+
+
+<p><strong>Abstract:</strong> <em>In recent years, deep learning (DL) with convolutional neural networks (CNN) to assess structural damages has gained growing popularity in vision-based structural health monitoring (SHM). Most of the current DL applications in SHM belong to the supervised learning category, e.g., image-based damage classification and localization, which usually relies on large amounts of labeled data to be accurate. However, large-scale image data acquisition and annotation processes are often costly in SHM. Moreover, the collected structural image datasets are usually highly imbalanced in practice, because images of damaged structures/components, e.g., a cracked concrete slab or a column with cover spalling, are far rarer than those of intact structures. Hence, both data deficiency and class-imbalance hinder the training efficiency. Common mitigation strategies in- clude transfer learning (TL), over-sampling by conventional data augmentation (DA), and under-sampling, yet these ad- hoc methods only provide limited performance boost that varies case by case. Generative Adversarial Network (GAN) is considered as an alternative to relieve the low-data and imbalanced-class issues by utilizing “synthetic” images that capture class-specific features to improve the classifier. In this work, we introduce one variant of GAN, named the Bal- anced Semi-supervised GAN (BSS-GAN), which adopts the semi-supervised learning concept and uses the balanced- batch sampling technique in training. A series of computer experiments on concrete cracking and spalling classification were conducted under low-data and imbalanced-class regime with limited computing power. The results show that the BSS-GAN is able to achieve higher damage detection performance (in terms of recall and F-beta score) than other conventional pipelines, indicating its state-of-the-art performance.</em></p>
+	</div><!-- .entry-content -->
+
+	</article><!-- #post-77 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<div class="clearfix"></div>
+    <section class="footer-widget">
+                <div class="clearfix"></div>
+  	</section>
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" style="clear:both">
+		<div class="site-info">
+			<a href="https://wordpress.org/">
+				Proudly powered by WordPress			</a>
+			<span class="sep"> | </span>
+				
+				<a href="https://asphaltthemes.com/">Asphalt Themes</a>
+				
+				
+		</div><!-- .site-info -->
+		<a href="#" class="scrolltotop"><i class="fas fa-chevron-up"></i></a>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://billyzz.github.io/wp-content/themes/cvee/js/sidr.js?ver=3.0.0'></script>
+<script type='text/javascript' src='http://billyzz.github.io/wp-content/themes/cvee/js/cv.js?ver=0.0.1'></script>
+<script type='text/javascript' src='http://billyzz.github.io/wp-content/themes/cvee/js/skip-link-focus-fix.js?ver=20151215'></script>
+<script type='text/javascript' src='http://billyzz.github.io/wp-includes/js/wp-embed.min.js?ver=5.2.7'></script>
+
+</body>
+</html>
