@@ -3,7 +3,7 @@
 	display: block;
 	width: 87px;
 	height: 28px;
-	background: url('/wp-content/plugins/cool-timeline/admin/admin-page-class/js/FancyCheckbox/images/iphone.png') no-repeat;
+	background: url('http://billyzz.github.io/wp-content/plugins/cool-timeline/admin/admin-page-class/js/FancyCheckbox/images/iphone.png') no-repeat;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -14,7 +14,7 @@
 	display: block;
 	width: 68px;
 	height: 28px;
-	background: url('/wp-content/plugins/cool-timeline/admin/admin-page-class/js/FancyCheckbox/images/firerift.png') no-repeat;
+	background: url('http://billyzz.github.io/wp-content/plugins/cool-timeline/admin/admin-page-class/js/FancyCheckbox/images/firerift.png') no-repeat;
 	cursor: pointer;
 }
 .on {background-position: 0% 100%;}
