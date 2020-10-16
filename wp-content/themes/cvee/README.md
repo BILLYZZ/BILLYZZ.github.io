@@ -2,7 +2,7 @@
 
 **Contributors:** asphaltthemes, ashiquzzaman
 **Requires at least:** WordPress 4.5
-**Tested up to:** WordPress 5.4.1
+**Tested up to:** WordPress 5.5.1
 **Stable tag:** 1.0
 **Version:** 0.1.9
 **License:** GPLv2 or later  
@@ -74,6 +74,21 @@ Source: https://pixabay.com/en/young-man-portrait-beard-young-man-1281282/
 
 
 ## Changelog
+
+
+##### = 0.2.2 -  September 7 , 2020  =
+- Add: WordPress 5.5.1 compatiblity
+
+
+##### = 0.2.1 -  July 28 , 2020  =
+- Add: Gutenberg custom line heights
+
+
+#### 0.2.0 (13 July, 2020)
+- Compatibility: Tested up to 5.4.2
+- Tweak: CSS classes
+- Fixed: Theme check errors
+
 
 #### 0.1.9 (19 May, 2020)
 * Compatibility: Add WordPress 5.4.1 compatibility
