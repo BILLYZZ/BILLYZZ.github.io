@@ -1,0 +1,9 @@
+/* purgecss start ignore */
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/tailwindcss/base';
+/* purgecss end ignore */
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/tailwindcss/components';
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/tailwindcss/utilities';
+
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/parts/wp-admin.css';
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/parts/muuri.css';
+@import '/wp-content/plugins/ml-slider/metagallery/resources/css/parts/utilities.css';

@@ -128,6 +128,51 @@ img.emoji {
 
 
 
+<h3 style="text-align:center">Current Progress</h3>
+
+
+
+<p>Update as of Feb 12, 2021: </p>
+
+
+
+<ul><li><strong>New paper title</strong>, &#8220;<em><a href="/wp-content/uploads/2021/02/Simulated_quantum_annealing_GAN_Mutual_Information.pdf">Information Maximization and Contrastive Learning Generative Adversarial Network for Simulated Quantum Annealing</a></em>&#8221; contains a revised model to replace the original design (<a href="/wp-content/uploads/2020/10/SQA_GAN.pdf">old paper link</a>). In the new model, I combined and tested various mutual information (lower bound) maximization strategies to the GAN framework to <strong>improve the generator&#8217;s data output quality </strong>at continuous target labels.</li></ul>
+
+
+<div id="metaslider-id-699" style="width: 100%;" class="ml-slider-3-20-2 metaslider metaslider-flex metaslider-699 ml-slider">
+    <div id="metaslider_container_699">
+        <div id="metaslider_699">
+            <ul aria-live="polite" class="slides">
+                <li style="display: block; width: 100%;" class="slide-700 ms-image"><img src="/wp-content/uploads/2021/02/sqa_gan_auxiliary_network-700x300.png" height="300" width="700" alt="" class="slider-699 slide-700" title="sqa_gan_auxiliary_network" /></li>
+                <li style="display: none; width: 100%;" class="slide-701 ms-image"><img src="/wp-content/uploads/2021/02/sqa_gan_contrastive-700x300.png" height="300" width="700" alt="" class="slider-699 slide-701" title="sqa_gan_contrastive" /></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<ul><li>Final paper for French History Class, Hist 103B, titled &#8220;<a href="/wp-content/uploads/2021/02/Paper_French_Images-5.pdf"><em>What Makes Satires Satirical? Discover Patterns from French Revolution Media with Deep Learning</em></a>&#8220;. I used GAN to extract salient visual features from French Revolution era artworks (engravings, pamphlets, etc) and argued that political engravings use wide and complex scenes to showcase political tension, meanwhile pamphlet pictures use simple metaphorical motifs to comment on political events and public figures.</li></ul>
+
+
+<div id="metaslider-id-704" style="width: 100%;" class="ml-slider-3-20-2 metaslider metaslider-flex metaslider-704 ml-slider">
+    <div id="metaslider_container_704">
+        <div id="metaslider_704">
+            <ul aria-live="polite" class="slides">
+                <li style="display: block; width: 100%;" class="slide-706 ms-image"><img src="/wp-content/uploads/2021/02/Screen-Shot-2021-02-13-at-6.52.00-PM-700x300.png" height="300" width="700" alt="" class="slider-704 slide-706" title="Screen Shot 2021-02-13 at 6.52.00 PM" /></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
 <h3 style="text-align:center" id="links">Papers and Manuscripts</h3>
 
 
@@ -200,10 +245,57 @@ img.emoji {
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<link rel='stylesheet' id='metaslider-flex-slider-css'  href='/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.20.2' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css'  href='/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.20.2' type='text/css' media='all' property='stylesheet' />
 <script type='text/javascript' src='/wp-content/themes/cvee/js/sidr.js?ver=3.0.0'></script>
 <script type='text/javascript' src='/wp-content/themes/cvee/js/cv.js?ver=0.0.1'></script>
 <script type='text/javascript' src='/wp-content/themes/cvee/js/skip-link-focus-fix.js?ver=20151215'></script>
 <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.2.9'></script>
+<script type='text/javascript' src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.20.2'></script>
+<script type='text/javascript'>
+var metaslider_699 = function($) {$('#metaslider_699').addClass('flexslider');
+            $('#metaslider_699').flexslider({ 
+                slideshowSpeed:3000,
+                animation:"fade",
+                controlNav:true,
+                directionNav:true,
+                pauseOnHover:true,
+                direction:"horizontal",
+                reverse:false,
+                animationSpeed:600,
+                prevText:"Previous",
+                nextText:"Next",
+                fadeFirstSlide:false,
+                slideshow:true
+            });
+            $(document).trigger('metaslider/initialized', '#metaslider_699');
+        };
+        var timer_metaslider_699 = function() {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_699, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_699, 1) : metaslider_699(window.jQuery);
+        };
+        timer_metaslider_699();
+var metaslider_704 = function($) {$('#metaslider_704').addClass('flexslider');
+            $('#metaslider_704').flexslider({ 
+                slideshowSpeed:3000,
+                animation:"fade",
+                controlNav:true,
+                directionNav:true,
+                pauseOnHover:true,
+                direction:"horizontal",
+                reverse:false,
+                animationSpeed:600,
+                prevText:"Previous",
+                nextText:"Next",
+                fadeFirstSlide:false,
+                slideshow:true
+            });
+            $(document).trigger('metaslider/initialized', '#metaslider_704');
+        };
+        var timer_metaslider_704 = function() {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_704, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_704, 1) : metaslider_704(window.jQuery);
+        };
+        timer_metaslider_704();
+</script>
 
 </body>
 </html>
